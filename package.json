@@ -1,0 +1,28 @@
+{
+  "name": "schemesaathi",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "dev:web": "vite --port 3000",
+    "dev:server": "tsx server.ts",
+    "build": "vite build",
+    "start": "tsx server.ts",
+    "test": "node --test src/eligibility/eligibility.test.js src/i18n/i18n.test.js src/utils/importer.test.js src/utils/readiness.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.0.1",
+    "vite": "^5.4.10"
+  }
+}

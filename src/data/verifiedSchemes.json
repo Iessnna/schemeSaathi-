@@ -1,0 +1,202 @@
+{
+  "schemes": [
+    {
+      "id": "pm-kisan",
+      "name": {
+        "en": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+        "hi": "प्रधानमंत्री किसान सम्मान निधि (पीएम-किसान)",
+        "ur": "وزیر اعظم کسان سمان ندھی (پی ایم-کسان)"
+      },
+      "description": {
+        "en": "Financial benefit of ₹6,000 per year in three equal 4-monthly installments to cultivable landholding farmer families.",
+        "hi": "कृषि योग्य भूमि वाले किसान परिवारों को प्रति वर्ष ₹6,000 की वित्तीय सहायता, तीन समान चार-मासिक किस्तों में।",
+        "ur": "قابل کاشت اراضی والے کسان خاندانوں کو ہر سال 6,000 روپے کی مالی امداد، تین مساوی چار ماہانہ قسطوں میں۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 18, "max": null },
+        "income": null,
+        "occupations": ["farmer"],
+        "genders": [],
+        "domicile": null,
+        "requires": [{ "field": "ownsLand", "equals": "yes" }]
+      },
+      "documents": ["doc.aadhaar", "doc.landRecord", "doc.bankPassbook"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": "https://pmkisan.gov.in/",
+      "sourceUrl": "https://pmkisan.gov.in/",
+      "publisher": "Ministry of Agriculture & Farmers Welfare, Government of India",
+      "retrievalDate": "2026-10-01",
+      "lastVerified": "2026-09-15",
+      "verificationStatus": "verified",
+      "lifeSituations": ["farmers", "low_income"]
+    },
+    {
+      "id": "pm-jay",
+      "name": {
+        "en": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (PM-JAY)",
+        "hi": "आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना (पीएम-जय)",
+        "ur": "آیوشمان بھارت - پردھان منتری جن آروگیہ یوجنا (پی ایم-جے)"
+      },
+      "description": {
+        "en": "Cashless health cover of up to ₹5,00,000 per family per year for secondary and tertiary care hospitalization across impanelled hospitals.",
+        "hi": "सूचीबद्ध अस्पतालों में माध्यमिक और तृतीयक देखभाल अस्पताल में भर्ती के लिए प्रति परिवार प्रति वर्ष ₹5,00,000 तक का कैशलेस स्वास्थ्य बीमा।",
+        "ur": "متعلقہ ہسپتالوں میں ثانوی اور تیسرے درجے کی دیکھ بھال کے لیے فی خاندان سالانہ 5,00,000 روپے تک کا کیش لیس ہیلتھ کور۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 0, "max": null },
+        "income": { "max": 250000 },
+        "occupations": [],
+        "genders": [],
+        "domicile": null,
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.incomeCertificate", "doc.bankPassbook"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": "https://setu.pmjay.gov.in/",
+      "sourceUrl": "https://pmjay.gov.in/",
+      "publisher": "National Health Authority (NHA), Government of India",
+      "retrievalDate": "2026-10-01",
+      "lastVerified": "2026-10-01",
+      "verificationStatus": "verified",
+      "lifeSituations": ["low_income", "seniors"]
+    },
+    {
+      "id": "pm-jdy",
+      "name": {
+        "en": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+        "hi": "प्रधानमंत्री जन धन योजना (पीएमजेडीवाई)",
+        "ur": "وزیر اعظم جن دھن یوجنا (پی ایم جے ڈی وائی)"
+      },
+      "description": {
+        "en": "National mission for financial inclusion ensuring access to financial services including zero-balance basic savings bank account, credit, and insurance.",
+        "hi": "वित्तीय समावेशन के लिए राष्ट्रीय मिशन: शून्य-शेष मूल बचत बैंक खाता, ऋण, प्रेषण सुविधा और बीमा तक सार्वभौमिक पहुँच।",
+        "ur": "مالی شمولیت کے لیے قومی مشن: زیرو بیلنس بنیادی بچت بینک اکاؤنٹ، کریڈٹ اور انشورنس تک رسائی۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 10, "max": null },
+        "income": null,
+        "occupations": [],
+        "genders": [],
+        "domicile": null,
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.photo"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": "https://pmjdy.gov.in/",
+      "sourceUrl": "https://pmjdy.gov.in/",
+      "publisher": "Department of Financial Services, Ministry of Finance, Government of India",
+      "retrievalDate": "2026-10-01",
+      "lastVerified": "2026-08-20",
+      "verificationStatus": "verified",
+      "lifeSituations": ["low_income", "job_seekers"]
+    },
+    {
+      "id": "nsp-post-matric",
+      "name": {
+        "en": "National Scholarship Portal - Post-Matric Scholarship",
+        "hi": "राष्ट्रीय छात्रवृत्ति पोर्टल - पोस्ट-मैट्रिक छात्रवृत्ति",
+        "ur": "نیشنل اسکالرشپ پورٹل - پوسٹ میٹرک اسکالرشپ"
+      },
+      "description": {
+        "en": "Financial assistance to students pursuing post-matriculation or post-secondary courses with modest parental/family income.",
+        "hi": "सीमित पारिवारिक आय वाले उच्चतर माध्यमिक या कॉलेज/विश्वविद्यालय पाठ्यक्रमों में नामांकित विद्यार्थियों के लिए वित्तीय सहायता।",
+        "ur": "محدود خاندانی آمدنی والے اعلیٰ ثانوی یا کالج کورسز میں زیر تعلیم طلباء کے لیے مالی امداد۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 15, "max": 35 },
+        "income": { "max": 250000 },
+        "occupations": [],
+        "genders": [],
+        "domicile": null,
+        "requires": [{ "field": "isStudent", "equals": "yes" }]
+      },
+      "documents": ["doc.aadhaar", "doc.studentId", "doc.incomeCertificate", "doc.bankPassbook"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": "https://scholarships.gov.in/",
+      "sourceUrl": "https://scholarships.gov.in/",
+      "publisher": "Ministry of Social Justice and Empowerment, Government of India",
+      "retrievalDate": "2026-10-01",
+      "lastVerified": "2026-09-01",
+      "verificationStatus": "verified",
+      "lifeSituations": ["students"]
+    },
+    {
+      "id": "pm-mudra",
+      "name": {
+        "en": "Pradhan Mantri Mudra Yojana (PMMY) - Shishu & Kishore",
+        "hi": "प्रधानमंत्री मुद्रा योजना (पीएमएमवाई) - शिशु एवं किशोर",
+        "ur": "وزیر اعظم مدرا یوجنا (پی ایم ایم وائی) - ششو اور کشور"
+      },
+      "description": {
+        "en": "Collateral-free micro loans up to ₹5 lakh for micro-enterprises, small business units, women entrepreneurs, and self-employed individuals.",
+        "hi": "सूक्ष्म उद्यमों, छोटे व्यापारों, महिला उद्यमियों और स्वरोज़गार व्यक्तियों के लिए ₹5 लाख तक का संपार्श्विक-मुक्त (बिना गारंटी) ऋण।",
+        "ur": "مائیکرو انٹرپرائزز، چھوٹے کاروباری اداروں، خواتین کاروباریوں اور خود روزگار افراد کے لیے 5 لاکھ روپے تک کا قرض۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 18, "max": 65 },
+        "income": null,
+        "occupations": ["selfEmployed"],
+        "genders": [],
+        "domicile": null,
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.businessProof", "doc.bankPassbook", "doc.photo"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": "https://www.udyamimitra.in/",
+      "sourceUrl": "https://www.mudra.org.in/",
+      "publisher": "Micro Units Development and Refinance Agency, Government of India",
+      "retrievalDate": "2026-10-01",
+      "lastVerified": "2026-07-15",
+      "verificationStatus": "verified",
+      "lifeSituations": ["women", "job_seekers"]
+    },
+    {
+      "id": "atal-pension",
+      "name": {
+        "en": "Atal Pension Yojana (APY)",
+        "hi": "अटल पेंशन योजना (एपीवाई)",
+        "ur": "اٹل پنشن یوجنا (اے پی وائی)"
+      },
+      "description": {
+        "en": "Guaranteed monthly pension ranging from ₹1,000 to ₹5,000 after 60 years of age for unorganized sector workers joining between age 18 and 40.",
+        "hi": "18 से 40 वर्ष की आयु में शामिल होने वाले असंगठित क्षेत्र के कामगारों और नागरिकों के लिए 60 वर्ष के बाद ₹1,000 से ₹5,000 की गारंटीकृत मासिक पेंशन।",
+        "ur": "18 سے 40 سال کی عمر میں شامل ہونے والے غیر منظم شعبے کے ورکرز کے لیے 60 سال کی عمر کے بعد 1,000 سے 5,000 روپے کی ماہانہ پنشن۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 18, "max": 40 },
+        "income": null,
+        "occupations": [],
+        "genders": [],
+        "domicile": null,
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.bankPassbook"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": "https://enps.nsdl.com/eNPS/ApySubForm.html",
+      "sourceUrl": "https://www.npscra.nsdl.co.in/scheme-details.php",
+      "publisher": "Pension Fund Regulatory and Development Authority (PFRDA)",
+      "retrievalDate": "2026-10-01",
+      "lastVerified": "2026-09-25",
+      "verificationStatus": "verified",
+      "lifeSituations": ["seniors", "job_seekers"]
+    }
+  ]
+}

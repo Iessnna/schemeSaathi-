@@ -1,0 +1,166 @@
+{
+  "_readme": "DEMO DATA — NOT REAL GOVERNMENT SCHEMES. Every record below is fictional and exists only to show how matching works. To add a real scheme, copy a record, set verificationStatus to 'verified', fill applicationUrl, sourceUrl and lastVerified from the official source, and write the rules exactly as the official notice states them.",
+  "schemes": [
+    {
+      "id": "demo-farmer-support",
+      "name": { "en": "Demo Farmer Income Support", "hi": "डेमो किसान आय सहायता", "ur": "ڈیمو کسان آمدنی معاونت" },
+      "description": {
+        "en": "Fictional sample: yearly support for farmers who own land and have a low family income.",
+        "hi": "काल्पनिक नमूना: जिन किसानों के पास अपनी ज़मीन है और परिवार की आय कम है, उनके लिए वार्षिक सहायता।",
+        "ur": "فرضی نمونہ: ان کسانوں کے لیے سالانہ معاونت جن کے پاس اپنی زمین ہے اور خاندانی آمدنی کم ہے۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 18, "max": null },
+        "income": { "max": 150000 },
+        "occupations": ["farmer"],
+        "genders": [],
+        "domicile": null,
+        "requires": [{ "field": "ownsLand", "equals": "yes" }]
+      },
+      "documents": ["doc.aadhaar", "doc.bankPassbook", "doc.landRecord", "doc.incomeCertificate"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": null, "sourceUrl": null, "lastVerified": null, "verificationStatus": "demo"
+    },
+    {
+      "id": "demo-bihar-crop-aid",
+      "name": { "en": "Demo Bihar Crop Season Aid", "hi": "डेमो बिहार फसल मौसम सहायता", "ur": "ڈیمو بہار فصل سیزن امداد" },
+      "description": {
+        "en": "Fictional sample: seasonal aid for farmers who hold a Bihar domicile, wherever they live now.",
+        "hi": "काल्पनिक नमूना: बिहार के अधिवास वाले किसानों के लिए मौसमी सहायता, वे अभी जहाँ भी रहते हों।",
+        "ur": "فرضی نمونہ: بہار کے ڈومیسائل والے کسانوں کے لیے موسمی امداد، چاہے وہ اب کہیں بھی رہتے ہوں۔"
+      },
+      "level": "state",
+      "governingState": "Bihar",
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 18, "max": null },
+        "income": null,
+        "occupations": ["farmer"],
+        "genders": [],
+        "domicile": { "states": ["Bihar"], "certificateRequired": true },
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.domicileCertificate", "doc.landRecord", "doc.bankPassbook"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": null, "sourceUrl": null, "lastVerified": null, "verificationStatus": "demo"
+    },
+    {
+      "id": "demo-merit-scholarship",
+      "name": { "en": "Demo Merit Scholarship", "hi": "डेमो मेरिट छात्रवृत्ति", "ur": "ڈیمو میرٹ وظیفہ" },
+      "description": {
+        "en": "Fictional sample: a scholarship for students aged 16 to 30 from families with a modest income.",
+        "hi": "काल्पनिक नमूना: सीमित आय वाले परिवारों के 16 से 30 वर्ष के विद्यार्थियों के लिए छात्रवृत्ति।",
+        "ur": "فرضی نمونہ: محدود آمدنی والے خاندانوں کے 16 سے 30 سال کے طلبہ کے لیے وظیفہ۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 16, "max": 30 },
+        "income": { "max": 300000 },
+        "occupations": [],
+        "genders": [],
+        "domicile": null,
+        "requires": [{ "field": "isStudent", "equals": "yes" }]
+      },
+      "documents": ["doc.aadhaar", "doc.studentId", "doc.incomeCertificate", "doc.bankPassbook"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": null, "sourceUrl": null, "lastVerified": null, "verificationStatus": "demo"
+    },
+    {
+      "id": "demo-women-seed-fund",
+      "name": { "en": "Demo Women Entrepreneurs Seed Fund", "hi": "डेमो महिला उद्यमी बीज निधि", "ur": "ڈیمو خواتین کاروباری بیج فنڈ" },
+      "description": {
+        "en": "Fictional sample: start-up money for self-employed women aged 21 to 55.",
+        "hi": "काल्पनिक नमूना: 21 से 55 वर्ष की स्वरोज़गार महिलाओं के लिए शुरुआती पूँजी।",
+        "ur": "فرضی نمونہ: 21 سے 55 سال کی خود روزگار خواتین کے لیے ابتدائی سرمایہ۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 21, "max": 55 },
+        "income": null,
+        "occupations": ["selfEmployed"],
+        "genders": ["female"],
+        "domicile": null,
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.businessProof", "doc.bankPassbook", "doc.photo"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": null, "sourceUrl": null, "lastVerified": null, "verificationStatus": "demo"
+    },
+    {
+      "id": "demo-senior-support",
+      "name": { "en": "Demo Senior Citizen Monthly Support", "hi": "डेमो वरिष्ठ नागरिक मासिक सहायता", "ur": "ڈیمو بزرگ شہری ماہانہ معاونت" },
+      "description": {
+        "en": "Fictional sample: monthly support for people aged 60 and above with a low family income.",
+        "hi": "काल्पनिक नमूना: कम पारिवारिक आय वाले 60 वर्ष और उससे अधिक आयु के लोगों के लिए मासिक सहायता।",
+        "ur": "فرضی نمونہ: کم خاندانی آمدنی والے 60 سال اور اس سے زیادہ عمر کے افراد کے لیے ماہانہ معاونت۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 60, "max": null },
+        "income": { "max": 200000 },
+        "occupations": [],
+        "genders": [],
+        "domicile": null,
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.ageProof", "doc.incomeCertificate", "doc.bankPassbook"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": null, "sourceUrl": null, "lastVerified": null, "verificationStatus": "demo"
+    },
+    {
+      "id": "demo-accessible-livelihood",
+      "name": { "en": "Demo Accessible Livelihood Grant", "hi": "डेमो सुगम आजीविका अनुदान", "ur": "ڈیمو قابلِ رسائی روزگار گرانٹ" },
+      "description": {
+        "en": "Fictional sample: a livelihood grant for working-age adults who hold a disability certificate.",
+        "hi": "काल्पनिक नमूना: दिव्यांगता प्रमाणपत्र रखने वाले कामकाजी आयु के वयस्कों के लिए आजीविका अनुदान।",
+        "ur": "فرضی نمونہ: معذوری کا سرٹیفکیٹ رکھنے والے کام کی عمر کے بالغوں کے لیے روزگار گرانٹ۔"
+      },
+      "level": "central",
+      "governingState": null,
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 18, "max": 59 },
+        "income": null,
+        "occupations": [],
+        "genders": [],
+        "domicile": null,
+        "requires": [{ "field": "hasDisabilityCertificate", "equals": "yes" }]
+      },
+      "documents": ["doc.aadhaar", "doc.disabilityCertificate", "doc.bankPassbook", "doc.photo"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": null, "sourceUrl": null, "lastVerified": null, "verificationStatus": "demo"
+    },
+    {
+      "id": "demo-delhi-skill-voucher",
+      "name": { "en": "Demo Delhi Skill Voucher", "hi": "डेमो दिल्ली कौशल वाउचर", "ur": "ڈیمو دہلی ہنر واؤچر" },
+      "description": {
+        "en": "Fictional sample: a training voucher for unemployed adults aged 18 to 35 who are domiciled in Delhi.",
+        "hi": "काल्पनिक नमूना: दिल्ली के अधिवास वाले 18 से 35 वर्ष के बेरोज़गार वयस्कों के लिए प्रशिक्षण वाउचर।",
+        "ur": "فرضی نمونہ: دہلی کے ڈومیسائل والے 18 سے 35 سال کے بے روزگار بالغوں کے لیے تربیتی واؤچر۔"
+      },
+      "level": "state",
+      "governingState": "Delhi",
+      "applicableStates": ["ALL"],
+      "eligibility": {
+        "age": { "min": 18, "max": 35 },
+        "income": null,
+        "occupations": ["unemployed"],
+        "genders": [],
+        "domicile": { "states": ["Delhi"], "certificateRequired": false },
+        "requires": []
+      },
+      "documents": ["doc.aadhaar", "doc.ageProof", "doc.bankPassbook", "doc.photo"],
+      "steps": ["step.gather", "step.form", "step.submit", "step.track"],
+      "applicationUrl": null, "sourceUrl": null, "lastVerified": null, "verificationStatus": "demo"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "SchemeSaathi",
+  "description": "Find and evaluate government welfare schemes with explainable deterministic eligibility, eligibility gaps, smart document checklists, comparisons, and multilingual assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
